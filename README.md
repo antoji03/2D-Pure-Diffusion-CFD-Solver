@@ -33,4 +33,4 @@ Each script can be executed independently. Results are printed to the terminal a
 
 António Reis  
 MSc Aerospace Engineering — Aerodynamics | CFD | Numerical Methods  
-🔗 [LinkedIn](www.linkedin.com/in/antónio-reis-615471327)
+🔗 [LinkedIn](https://www.linkedin.com/in/antónio-reis-615471327)
