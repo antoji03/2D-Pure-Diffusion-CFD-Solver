@@ -14,7 +14,7 @@ It compares numerical results with the analytical solution and evaluates the acc
 ## Project Structure
 
 - `code/` — Python and MATLAB scripts for the solver and analytical solution
-- `figures/` — Plots comparing numerical and analytical results
+- `figures/` — Example of a plot made with MARK III - Gauss Seidel Sor Iterative Method, comparing numerical and analytical results and memory and time consumption.
 - `2D_Pure_Diffusion_CFD_Code_Report.pdf` — Project report, with detailed explanation of the proposed case and results analysis
 
 ## How to Run
