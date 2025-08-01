@@ -42,7 +42,7 @@ The solver was benchmarked on multiple grid refinements, comparing **accuracy, e
 
 ## Example Plots
 
-(figures/
+[!Example of Plot for Successive over Relaxation Solver](figures/SOR-Plots.png)
 
 ## Author
 
