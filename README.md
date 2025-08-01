@@ -1,33 +1,42 @@
-# 2D Pure Diffusion CFD Solver
+# 2D Pure Diffusion Finite Volume Solver
 
-This project implements a 2D Finite Volume Method (FVM) solver for the steady-state diffusion equation using Python.
-It compares numerical results with the analytical solution and evaluates the accuracy through relative error metrics.
+This repository contains a **2D Finite Volume Method (FVM) solver** for the steady-state **heat diffusion equation** with spatially varying thermal conductivity. The solver was implemented in **Python** and validated using the **Method of Manufactured Solutions (MMS)** to ensure consistency between analytical and numerical solutions.
+
+---
+
+## Overview
+
+The code discretizes the **2D steady-state diffusion equation** using the **Finite Volume Method** on a structured mesh and solves the resulting linear system using:
+
+- A **Direct Solver** (`numpy.linalg.solve`)
+- **Gauss–Seidel Iterative Solver**
+- **Gauss–Seidel with Successive Over-Relaxation (SOR)**
+
+The solver was benchmarked on multiple grid refinements, comparing **accuracy, execution time, memory consumption, and convergence** for each method.
+
+---
 
 ## Features
 
-- Discretization via FVM on a uniform mesh for the steady-state diffusion equation using Python
-- Gauss-Seidel and Gauss-Seidel SOR solvers implemented from scratch in Python
-- Analytical solution for validation of the Numerical Model
-- Matplotlib visualizations
-- Execution time and memory consumption analysis
+- **Finite Volume Method (FVM)** discretization for 2D diffusion
+- Uses the **Method of Manufactured Solutions (MMS)** for validation
+- Three solution approaches:
+  - Direct Solver (fast for small systems)
+  - Iterative Gauss–Seidel
+  - Gauss–Seidel with **SOR** (faster convergence)
+- Mesh refinement up to **320×160**
+- Generates contour plots for:
+  - Numerical solution
+  - Analytical solution
+  - Absolute error
+  - Relative error
 
-## Project Structure
+---
 
-- `code/` — Python and MATLAB scripts for the solver and analytical solution
-- `figures/` — Example of a plot made with MARK III - Gauss Seidel Sor Iterative Method, comparing numerical and analytical results and memory and time consumption.
-- `2D_Pure_Diffusion_CFD_Code_Report.pdf` — Project report, with detailed explanation of the proposed case and results analysis
+## Repository Structure
 
-## How to Run
-
-- To run the code, download or clone the repository and navigate to the `code/` folder.
-
-There are three different solver implementations:
-
-- **Mark I** – Direct solver using matrix inversion 
-- **Mark II** – Iterative Gauss-Seidel solver 
-- **Mark III** – Iterative Gauss-Seidel SOR solver with relaxation 
-
-Each script can be executed independently. Results are printed to the terminal and visualized using matplotlib.
+- README.md #This File
+- 
 
 ## Author
 
