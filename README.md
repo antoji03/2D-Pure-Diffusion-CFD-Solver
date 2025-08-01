@@ -36,7 +36,13 @@ The solver was benchmarked on multiple grid refinements, comparing **accuracy, e
 ## Repository Structure
 
 - README.md #This File
-- 
+- 2D_Pure_Diffusion_CFD_Code_Report.pdf # Technical report, with theory, methodology and results/discussion.
+- Code
+- Figures
+
+## Example Plots
+
+(figures/
 
 ## Author
 
